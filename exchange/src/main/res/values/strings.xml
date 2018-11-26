@@ -10,4 +10,5 @@
         <item>KRW</item>
     </string-array>
     <string name="enter_value">Enter a value</string>
+    <string name="get_value">Converted value</string>
 </resources>
