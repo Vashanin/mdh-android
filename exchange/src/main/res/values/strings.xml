@@ -3,6 +3,7 @@
     <string-array name="action_bar_spinner">
         <item>EUR</item>
         <item>SEK</item>
+        <item>UAH</item>
         <item>USD</item>
         <item>GBP</item>
         <item>CNY</item>
