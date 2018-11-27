@@ -9,30 +9,30 @@
 
     <EditText
         android:id="@+id/first_currency_input"
-        android:layout_width="250dp"
+        android:layout_width="184dp"
         android:layout_height="40dp"
         android:layout_alignBottom="@+id/second_currency_input"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="8dp"
         android:hint="@string/enter_value"
-        android:textSize="14sp"
-        android:maxLength="28"
         android:inputType="numberDecimal"
+        android:maxLength="28"
+        android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/first_currency"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
+    <TextView
         android:id="@+id/second_currency_input"
-        android:layout_width="250dp"
+        android:layout_width="185dp"
         android:layout_height="40dp"
         android:layout_alignEnd="@+id/first_currency"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:hint="@string/get_value"
-        android:editable="false"
+        android:padding="4dip"
         android:textSize="14sp"
         app:layout_constraintEnd_toStartOf="@+id/second_currency"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
         android:id="@+id/first_currency"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="16dp"
         android:dropDownWidth="match_parent"
         android:entries="@array/action_bar_spinner"
@@ -55,13 +55,27 @@
         android:id="@+id/second_currency"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:dropDownWidth="match_parent"
         android:entries="@array/action_bar_spinner"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/second_currency_input"
-        app:layout_constraintTop_toBottomOf="@+id/first_currency"/>
+        app:layout_constraintTop_toBottomOf="@+id/first_currency" />
+
+    <Button
+        android:id="@+id/see_all_currencies_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="seeAllCurrencies"
+        android:text="@string/button_see_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_currency_input" />
 
 </android.support.constraint.ConstraintLayout>

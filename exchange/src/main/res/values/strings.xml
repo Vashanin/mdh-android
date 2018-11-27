@@ -12,4 +12,5 @@
     </string-array>
     <string name="enter_value">Enter a value</string>
     <string name="get_value">Converted value</string>
+    <string name="button_see_all">See all currencies</string>
 </resources>
